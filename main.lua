@@ -1,7 +1,7 @@
 return function (arr)
 	--[[
 		Array Functions Made By Monotter
-		Version: 2.8
+		Version: 3
 	]]
 	local _Table = arr or {}
 	local Array = {}
@@ -35,7 +35,8 @@ return function (arr)
 		return false
 	end
 	function Array:sort(callback)
-		table.sort(_Table,callback)
+		local tab = _Table
+		table.sort(tab,callback)
 	end
 	function Array:every(callback)
 		for i in pairs(_Table) do

@@ -33,6 +33,9 @@
 		end
 		return false
 	end
+	function Array:sort(callback)
+		table.sort(_Table,callback)
+	end
 	function Array:every(callback)
 		for i in pairs(_Table) do
 			local n = callback(_Table[i],i)

@@ -1,4 +1,5 @@
---[[
+return function (arr)
+	--[[
 		Array Functions Made By Monotter
 		Version: 2.8
 	]]
@@ -146,3 +147,4 @@
 		return table.unpack(_Table)
 	end
 	return Array
+end

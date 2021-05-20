@@ -35,8 +35,8 @@ return function (arr)
 		return false
 	end
 	function Array:sort(callback)
-		local tab = _Table
-		table.sort(tab,callback)
+	        table.sort(tab,callback)
+                return Array
 	end
 	function Array:every(callback)
 		for i in pairs(_Table) do
@@ -152,3 +152,4 @@ return function (arr)
 	end
 	return Array
 end
+
